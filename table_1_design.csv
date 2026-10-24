@@ -1,0 +1,8 @@
+design_component,setting,interpretation
+Observations per seed,3200,Simulated firms with binary outcomes
+Independent seeds,5,"7;11;19;23;31"
+Train/test split,70% / 30%,Stratified within each seed
+Missingness probability,"0;0.10;0.25;0.40",MCAR independently per cell
+Measurement noise probability,0.45 times missingness rate,Gaussian sigma 0.34 clipped to [0;1]
+Knowledge rule,liquidity below 0.25 and leverage above 0.65,Subtract 0.16 from probability only if both raw values observed
+Prediction target,Simulated innovation outcome,Not actual measured entrepreneurial performance
